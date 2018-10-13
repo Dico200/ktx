@@ -8,8 +8,8 @@ import com.badlogic.gdx.utils.async.AsyncExecutor
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.doAnswer
 import com.nhaarman.mockito_kotlin.mock
-import kotlinx.coroutines.experimental.CoroutineScope
-import kotlinx.coroutines.experimental.Job
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Job
 import org.junit.Assert.assertTrue
 import java.util.concurrent.*
 import java.util.concurrent.TimeUnit.MILLISECONDS

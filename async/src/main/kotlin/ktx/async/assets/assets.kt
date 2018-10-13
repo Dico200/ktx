@@ -12,7 +12,8 @@ import com.badlogic.gdx.utils.*
 import com.badlogic.gdx.utils.async.AsyncExecutor
 import ktx.async.KtxAsync
 import java.util.ArrayList
-import kotlin.coroutines.experimental.suspendCoroutine
+import kotlin.coroutines.suspendCoroutine
+import kotlin.coroutines.resume
 import com.badlogic.gdx.graphics.g3d.particles.ParticleEffect as ParticleEffect3D
 import com.badlogic.gdx.graphics.g3d.particles.ParticleEffectLoader as ParticleEffect3dLoader
 import com.badlogic.gdx.utils.Array as GdxArray
