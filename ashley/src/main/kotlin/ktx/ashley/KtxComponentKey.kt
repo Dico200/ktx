@@ -13,3 +13,22 @@ private constructor(val type: ComponentType) {
 
 @Suppress("NOTHING_TO_INLINE")
 inline operator fun <T : Component> Entity.get(key: KtxComponentKey<T>): T = getComponent(key.type)
+
+/*
+Example:
+
+Component class ---
+
+    class State : Component {
+        var health: Double = 1.0
+
+        companion object : KtxComponentKey<State>(State::class)
+    }
+
+Usage ---
+
+    fun changeState(entity: Entity) {
+        entity[State].health = 0.5
+    }
+
+ */
